@@ -7,3 +7,9 @@ const weekDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturd
 
 console.log('Today is: ', weekDay[date.getDay() - 1]);
 console.log('Current time is: ', date.getHours(), ":", date.getMinutes(), ":", date.getSeconds());
+
+// Exercise 2: Write a JS program to print the current window content
+
+function print_page() {
+    window.print();
+}
