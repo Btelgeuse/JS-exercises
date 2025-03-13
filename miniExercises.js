@@ -2,8 +2,8 @@
 
 // Exercise 1: Display current day and time
 
-const date = new Date();
-const weekDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+let date = new Date();
+let weekDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 console.log('Today is: ', weekDay[date.getDay() - 1]);
 console.log('Current time is: ', date.getHours(), ":", date.getMinutes(), ":", date.getSeconds());
@@ -13,3 +13,30 @@ console.log('Current time is: ', date.getHours(), ":", date.getMinutes(), ":", d
 function print_page() {
     window.print();
 }
+
+// Exercise 3: Get current date in various formats
+
+let today = new Date();
+let day = today.getDay();
+let month = today.getMonth() + 1; // getMonth method starts at 0 !
+let year = today.getFullYear();
+
+if (day < 10) {
+    day = "0" + day;
+}
+
+if (month < 10) {
+    month = "0" + month;
+}
+
+today = day + '-' + month + '-' + year
+console.log(today)
+
+today = day + '/' + month + '/' + year
+console.log(today)
+
+today = month + '-' + day + '-' + year
+console.log(today)
+
+today = month + '/' + day + '/' + year
+console.log(today)
