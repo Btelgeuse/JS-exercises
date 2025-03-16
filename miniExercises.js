@@ -70,3 +70,9 @@ function calculate_area(a, b, c) {
 }
 
 calculate_area(5, 6, 7);
+
+// Exercise 11: Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+
+function degree_conversion() {
+    
+}
